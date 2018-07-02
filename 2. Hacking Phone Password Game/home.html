@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hacking Phone Password Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+	<div class="background">
+		<div class="game-intro">
+	    	<h1>Hacking Phone Password</h1>
+			<p>You are a suspicious girlfriend.</p>
+			<p> While you boyfriend is gone for few minutes, you decided to check his phone.</p>
+			<p>You don't know his password but luckily, you have a hacking tool!</p>
+			<p>This tool lets you know how many numbers you've entered correctly by green signals and how many numbers in the correct place by red signals.</p>
+			<p>You get 10 chances to guess before his phone gets locked.</p>
+			<p>Password is <strong>4 digit number</strong>. And there is <strong>no duplicate number!</strong></p>
+			<p>Good luck!</p>
+			<button id="start-button">Start Hacking!</button>
+  		</div>
+  	</div>
+
+	<div class="game-screen" class="show">
+		<p id="attempt-state">Number of Attempt Left: <span id="attempts">10</span></p>
+		<input type="text" name="guess" id="guess" maxlength="4" autofocus>
+		<button id="submit-button">Sumbit</button>
+		<p class="answer-status-box">
+			<span class="answer-status" id="span-1"></span>
+			<span class="answer-status" id="span-2"></span>
+			<span class="answer-status" id="span-3"></span>
+			<span class="answer-status" id="span-4"></span>
+		</p>
+		<p id="correct-position"></p>
+		<p id="correct-value"></p>
+	</div>
+
+	<div class="won-screen">
+		<div class="game-outro">
+	    	<h1>Congratulations!</h1>
+			<p>You successfully hacked your boyfriend's phone and found out that he's been cheating on you!</p>
+			<p>Oh wait...</p>
+  		</div>
+  	</div>
+
+  	<div class="lose-screen">
+  		<div class="game-outro">
+	    	<h1>Oh, No!</h1>
+			<p>You locked your boyfriend's phone for 23958 hours.</p>
+			<p>He came back and found out what you've done. Now, he's not talking to you anymore.</p>
+			<p>Great.</p>
+  		</div>
+  	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

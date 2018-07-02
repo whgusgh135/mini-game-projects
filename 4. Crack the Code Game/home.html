@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crack the Code</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+	<h1>Crack the Code</h1>
+
+	<div id="instruction">
+		<p>Try to crack the code for the safe.</p>
+		<p>Click a number to increase. Right click to decrease.</p>
+		<p>The color signals will guide you to the right code.</p>
+
+		<button id="start">Start</button>
+	</div>
+
+	<div id="game-screen">
+		<p>Left or Right click to toggle numbers.</p>
+		<p>You have <span>5</span> tries left.</p>
+
+		<img src="safe-closed.jpg">
+
+		<div id="code-boxes">
+			<div id="first-code" class="code-input">0</div>
+			<div id="second-code" class="code-input">0</div>
+			<div id="third-code" class="code-input">0</div>
+			<div id="fourth-code" class="code-input">0</div>
+		</div>
+
+		<div id="hint-boxes">
+			<div id="first-hint" class="hint-box"></div>
+			<div id="second-hint" class="hint-box"></div>
+			<div id="third-hint" class="hint-box"></div>
+			<div id="fourth-hint" class="hint-box"></div>
+		</div>
+
+		<button id="try">Try Open</button>
+	</div>
+
+	<div id="lose-screen" class="end-screen">
+		<h2>Sorry, you have lost!</p>
+		<br>
+		<button class="replay">Retry</button>
+	</div>
+
+	<div id="win-screen" class="end-screen">
+		<h2>Congratulation. You have won!</h2>
+		<br>
+		<button class="replay">Replay</button>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

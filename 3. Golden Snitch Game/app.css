@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	text-align: center;
+	height: 100%;
+	background: grey;
+}
+
+canvas {
+	border: 1px solid black;
+	background: grey;
+	opacity: 0;
+	display: none;
+}
+
+#broom {
+	max-width: 150px;
+	height: auto;
+}
+
+#golden-snitch {
+	max-width: 100%;
+	height: auto;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+
+
+span {
+	color: gold;
+}
+
+.game-intro {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 110px;
+    opacity: 0;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    max-width: 400px;
+    animation: 1s slide 0.5s forwards;
+}
+.game-end {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 10px;
+    opacity: 1;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    max-width: 400px;
+    display: none;
+}
+
+@keyframes slide {
+	100% {
+		opacity: 1;
+		margin-top: 10px;
+	}
+}
+
+@keyframes fade {
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 540px) {
+	#broom {
+		max-width: 150px;
+	}
+}
