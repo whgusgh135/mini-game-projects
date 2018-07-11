@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2 Cards Poker Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>2 Cards Poker Game</h1>
+	<div class="rulebook">
+		<button class="expand-button">-</button>
+		<h4>Poker Hand Ranks: (Highest to lowest)</h4>
+		<div class="rulebook__rules">
+			<p>1. Straight Flush (2 cards of sequential rank, same suit)</p>
+		  	<p>2. Flush (2 cards, same suit)</p>
+		  	<p>3. Straight (2 cards of sequential rank, different suit)</p>
+		  	<p>4. 1 pair (2 cards of same rank)</p>
+		  	<p>5. High Card (2 cards, different rank, suit and not in sequence. Highest card wins)</p>
+		  	<p>6. On same rank, dealer always wins</p>
+		</div>
+	</div>
+
+	<p>Dealer Cards || Dealer Chips: <span class="dealer-chips">5000</span></p>
+
+	<div class="dealer-cards">
+		<div class="card">
+			<p class="dealer-card-text card-text"></p>
+		</div>
+		<div class="card">
+			<p class="dealer-card-text card-text"></p>
+		</div>
+	</div>
+
+	<p class="winner-status">YOU WON!</p>
+
+	<div class="chip-display">
+		Chips: <span class="betting-chips">0</span>
+	</div>
+
+	<p>My Cards || My Chips: <span class="user-chips">1000</span></p>
+
+	<div class="user-cards">
+		<div class="card">
+			<p class="user-card-text card-text">1</p>
+		</div>
+		<div class="card">
+			<p class="user-card-text card-text">1</p>
+		</div>
+	</div>
+	
+	<div class="buttons">
+		<button class="open-button">Open</button>
+  		<button class="bet-button">Bet</button>
+	</div>
+  	
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
